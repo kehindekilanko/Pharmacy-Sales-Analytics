@@ -1,105 +1,71 @@
-# Pharmacy Sales & Profitability Analysis (Power BI)
+# Problem Statement
 
-## 📌 Project Overview
-This project analyzes pharmacy sales data to uncover insights into **revenue performance, profitability, product trends, and store-level performance** across multiple European countries.
+Pharmacy businesses often grow revenue without improving profitability. This analysis focuses on identifying:
+Which countries and pharmacy locations generate the most revenue and profit
+Whether higher sales volume translates into higher profitability
+How pharmacy type and store size impact performance
+Which product categories and brands deliver the highest margins
+The effect of promotions and generic products on revenue
 
-The goal is to support **data-driven decision-making** for business stakeholders by identifying:
-- High-performing products and brands
-- Most profitable cities and pharmacies
-- Sales trends over time
-- Impact of promotions on revenue and margin
+## Data & Tools Used
 
----
+Dataset: Pharmacy Sales & Profitability dataset (Onyx Data Challenge)
+Tool: Microsoft Power BI
 
-## 🎯 Business Objectives
-- Analyze **total revenue, margin, and units sold**
-- Track **Year-over-Year (YoY)** performance
-- Identify **top-performing brands, cities, and pharmacies**
-- Understand **product category performance**
-- Compare **generic vs non-generic products**
-- Evaluate the **impact of promotions** on sales
+## Techniques Applied
+Data cleaning and transformation
+Star schema data modeling
+DAX measures for KPIs and month-over-month growth
+Time-series, geographical, and comparative analysis
+Revenue vs. profit vs. margin evaluation
+Business-focused data storytelling
 
----
+## Key Insights
+1. Business Performance
+€8.6M in revenue and €2.42M in profit generated with consistent month-over-month growth
+Stable 28.04% profit margin, indicating controlled costs alongside scaling
+2. Geographical & Location Insights
+Germany (€1.57M), France (€1.41M), and Italy (€1.33M) contribute over 50% of total revenue
+Urban pharmacies generate 47.78% of total revenue, outperforming suburban (36.01%) and rural (16.21%) stores
+Profit margins are nearly identical across pharmacy types:
+Suburban: 33.39%
+Urban: 33.36%
+Rural: 33.25%
+Location drives sales volume, not profitability.
+3. Store Size Performance
+Medium-sized pharmacies lead revenue generation with €3.8M, outperforming large (€3.2M) and small (€1.6M) stores
+Medium-sized stores strike the best balance between scale and efficiency
+4. Product & Category Insights
+Prescription products generate the highest revenue (€2.8M) and profit (€613K) but have the lowest margin (21.92%)
+Wellness and Personal Care categories deliver margins above 37%, despite lower revenue contribution
+High revenue does not always mean high profitability.
+5. Brand & Promotion Insights
+83.25% of revenue comes from non-generic products, indicating strong brand loyalty
+89.45% of revenue is generated without promotions, suggesting low price sensitivity
 
-## 📊 Key KPIs
-- **Total Revenue:** €8.6M  
-- **Total Margin:** €2.42M  
-- **Gross Margin:** 28.04%  
-- **Total Units Sold:** 446K  
-- **YoY Growth:** ~104% across revenue, margin, and units
+## Dashboard Pages
 
----
+Overview: Business performance, revenue trends, and category breakdown
+![Pharmacy Sales Analytics_page-0001](https://github.com/user-attachments/assets/9e0a7b41-edc4-4fe4-8291-ac915324a59f)
 
-## 🛠 Tools & Technologies
-- **Power BI Desktop**
-- **DAX** (Time Intelligence, YoY calculations)
-- **Power Query** (Data cleaning & transformation)
-- **Data Modeling**
+Geographical Analysis: Country, pharmacy type, and store size performance
+![Pharmacy Sales Analytics_page-0002](https://github.com/user-attachments/assets/e6fe3e76-5261-466e-aae4-c56360d03402)
 
----
+Product Analysis: Category margins, brand performance, and promotion impact
+![Pharmacy Sales Analytics_page-0003](https://github.com/user-attachments/assets/94ea72a0-d806-4beb-bb37-67b3a6e08911)
 
-## 🗂 Dataset Description
-The dataset includes pharmacy sales records with the following attributes:
-- Date (Year, Month)
-- Country, City, Region
-- Pharmacy Name, Store Size, Pharmacy Type
-- Product Name, Brand, Category
-- Units Sold, Revenue, Cost, Margin
-- Promotion Flag
-- Generic vs Non-Generic Indicator
+Recommendations
 
+Scale medium-sized urban pharmacies in high-performing regions
 
----
+Increase focus on high-margin Wellness and Personal Care products
 
-## 📈 Dashboard Pages Overview
+Replicate high-margin country strategies (e.g., Belgium and Austria) in larger markets
 
-### 🔹 Page 1: Executive Overview
-- Revenue & Margin monthly trend
-- Total KPIs with YoY comparison
-- Revenue by country
-- Top 5 most profitable brands
-- Generic vs Non-Generic split
+Reduce reliance on promotions and strengthen brand-led pricing strategies
 
-<img width="621" height="346" alt="Pharm_Sales 1" src="https://github.com/user-attachments/assets/c8f8e9b6-c67c-4a91-a16b-49501bcd8bb5" />
+Track profit per product, not just units sold
 
+Key Takeaway
 
----
-
-### 🔹 Page 2: Pharmacy Performance Analysis
-- Revenue by store size and pharmacy type
-- Top-performing pharmacies by revenue and margin
-- Top 5 most profitable cities
-
-<img width="617" height="345" alt="Pharm_Sales 2" src="https://github.com/user-attachments/assets/df95a039-12af-46ed-9cfc-72d327ccb6a7" />
-
----
-
-### 🔹 Page 3: Product & Category Insights
-- Units sold by product category
-- Revenue and margin by category
-- Top-performing products by gross margin
-- Revenue by promotion vs non-promotion
-
-<img width="617" height="346" alt="Pharm_Sales 3" src="https://github.com/user-attachments/assets/39b0d637-c082-4bbe-a2de-62e133d100e2" />
-
-
----
-
-## 🧠 Key Insights
-- Large urban pharmacies contribute the highest share of revenue and margin
-- Prescription and OTC categories drive the majority of revenue
-- Promotions contribute a smaller share of total revenue, suggesting pricing strength
-- Certain cities (e.g., Milan, Hamburg, Utrecht) consistently outperform others
-- Non-generic products dominate total revenue contribution
-
----
-
-## 📌 Recommendations
-- Focus inventory and marketing efforts on **high-margin brands and categories**
-- Expand best-performing product lines in **top cities**
-- Reassess promotion strategy to improve its contribution to revenue
-- Leverage YoY trends for demand forecasting and planning
-
-
-
-
+Sustainable growth comes from optimizing store formats and product mix, not just increasing sales volume.
